@@ -1,0 +1,80 @@
+/* Extend the basic styling from previous CSS */
+
+/* Product Detail Page Specific Styling */
+.product-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-detail img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.product-info {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.product-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.product-info form {
+  margin-top: 20px;
+}
+
+.product-info label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.product-info input[type="number"] {
+  width: 50px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-info button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-detail {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-detail img {
+      margin-bottom: 20px;
+  }
+
+  .product-info input[type="number"], .product-info button {
+      width: auto;
+      display: block;
+  }
+}
